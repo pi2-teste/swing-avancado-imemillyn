@@ -49,13 +49,13 @@ public class VendaComputadorView extends javax.swing.JFrame {
         buttonGroup6 = new javax.swing.ButtonGroup();
         buttonGroup7 = new javax.swing.ButtonGroup();
         pnlSO = new javax.swing.JPanel();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
+        pc = new javax.swing.JRadioButton();
+        notebook = new javax.swing.JRadioButton();
+        servidor = new javax.swing.JRadioButton();
         lblImagem = new javax.swing.JLabel();
         pnlHD = new javax.swing.JPanel();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jToggleButton4 = new javax.swing.JToggleButton();
+        windows = new javax.swing.JToggleButton();
+        linux = new javax.swing.JToggleButton();
         pnlAcessorios = new javax.swing.JPanel();
         jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
@@ -88,29 +88,29 @@ public class VendaComputadorView extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Compra Personalizada");
 
-        pnlSO.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha um tipo de Computador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        pnlSO.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha um tipo de Computador", 0, 0, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
-        buttonGroup6.add(jRadioButton4);
-        jRadioButton4.setText("PC");
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup6.add(pc);
+        pc.setText("PC");
+        pc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
+                pcActionPerformed(evt);
             }
         });
 
-        buttonGroup6.add(jRadioButton5);
-        jRadioButton5.setText("Notebook");
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup6.add(notebook);
+        notebook.setText("Notebook");
+        notebook.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
+                notebookActionPerformed(evt);
             }
         });
 
-        buttonGroup6.add(jRadioButton6);
-        jRadioButton6.setText("Servidor");
-        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup6.add(servidor);
+        servidor.setText("Servidor");
+        servidor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton6ActionPerformed(evt);
+                servidorActionPerformed(evt);
             }
         });
 
@@ -122,9 +122,9 @@ public class VendaComputadorView extends javax.swing.JFrame {
             pnlSOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlSOLayout.createSequentialGroup()
                 .addGroup(pnlSOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton5)
-                    .addComponent(jRadioButton6))
+                    .addComponent(pc)
+                    .addComponent(notebook)
+                    .addComponent(servidor))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblImagem)
                 .addGap(98, 98, 98))
@@ -135,35 +135,35 @@ public class VendaComputadorView extends javax.swing.JFrame {
                 .addGroup(pnlSOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlSOLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jRadioButton4)
+                        .addComponent(pc)
                         .addGap(18, 18, 18)
-                        .addComponent(jRadioButton5)
+                        .addComponent(notebook)
                         .addGap(18, 18, 18)
-                        .addComponent(jRadioButton6))
+                        .addComponent(servidor))
                     .addGroup(pnlSOLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(lblImagem)))
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        pnlHD.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Sistema Operacional", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        pnlHD.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Sistema Operacional", 0, 0, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
-        buttonGroup7.add(jToggleButton3);
-        jToggleButton3.setText("Windows");
-        jToggleButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonGroup7.add(windows);
+        windows.setText("Windows");
+        windows.setBorder(new javax.swing.border.SoftBevelBorder(0));
 
-        buttonGroup7.add(jToggleButton4);
-        jToggleButton4.setText("Linux");
-        jToggleButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonGroup7.add(linux);
+        linux.setText("Linux");
+        linux.setBorder(new javax.swing.border.SoftBevelBorder(0));
 
         javax.swing.GroupLayout pnlHDLayout = new javax.swing.GroupLayout(pnlHD);
         pnlHD.setLayout(pnlHDLayout);
         pnlHDLayout.setHorizontalGroup(
             pnlHDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlHDLayout.createSequentialGroup()
-                .addComponent(jToggleButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(windows, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jToggleButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(linux, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(50, Short.MAX_VALUE))
         );
         pnlHDLayout.setVerticalGroup(
@@ -171,15 +171,14 @@ public class VendaComputadorView extends javax.swing.JFrame {
             .addGroup(pnlHDLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnlHDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jToggleButton3)
-                    .addComponent(jToggleButton4))
+                    .addComponent(windows)
+                    .addComponent(linux))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        pnlAcessorios.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acessórios e Serviços", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        pnlAcessorios.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acessórios e Serviços", 0, 0, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
         jCheckBox1.setText("MousePad");
-        jCheckBox1.setActionCommand("MousePad");
 
         jCheckBox2.setText("HUB USB");
 
@@ -230,7 +229,7 @@ public class VendaComputadorView extends javax.swing.JFrame {
 
         btnCancelar.setText("Cancelar");
 
-        pnlAcessorios1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha o tipo de capacidade HD", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        pnlAcessorios1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Escolha o tipo de capacidade HD", 0, 0, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "HDD 1TB", "SSD 256 GB", "SSD 1TB" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -260,7 +259,6 @@ public class VendaComputadorView extends javax.swing.JFrame {
 
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/novo.png"))); // NOI18N
         jMenuItem2.setText("Novo Cliente");
-        jMenuItem2.setActionCommand("Novo Cliente");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -327,7 +325,6 @@ public class VendaComputadorView extends javax.swing.JFrame {
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnCancelar, btnSalvar});
 
         pnlSO.getAccessibleContext().setAccessibleName("Escolha um tipo de computador");
-        pnlAcessorios.getAccessibleContext().setAccessibleName("Acessórios e Serviços");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -336,18 +333,18 @@ public class VendaComputadorView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+    private void pcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pcActionPerformed
     
         this.lblImagem.setIcon(new ImageIcon(getClass().getResource("/pc.png")));
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
+    }//GEN-LAST:event_pcActionPerformed
 
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+    private void notebookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notebookActionPerformed
     this.lblImagem.setIcon(new ImageIcon(getClass().getResource("/notebook.png")));
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
+    }//GEN-LAST:event_notebookActionPerformed
 
-    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+    private void servidorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_servidorActionPerformed
     this.lblImagem.setIcon(new ImageIcon(getClass().getResource("/servidor.png")));    
-    }//GEN-LAST:event_jRadioButton6ActionPerformed
+    }//GEN-LAST:event_servidorActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         CadastroClienteView novoCliente = new CadastroClienteView();
@@ -355,7 +352,18 @@ public class VendaComputadorView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
-        // TODO add your handling code here:
+        if (pc.isSelected()){
+            JOptionPane.showMessageDialog(null, "Você comprou um computador!");
+        }
+        else if (notebook.isSelected()){
+            JOptionPane.showMessageDialog(null, "Você comprou um Notebook!");
+        }
+        else if (servidor.isSelected()){
+            JOptionPane.showMessageDialog(null, "Você comprou um Servidor!");
+        }
+        else{
+            JOptionPane.showMessageDialog(null, "Selecione uma opção!");
+        }
     }//GEN-LAST:event_btnSalvarActionPerformed
 
     /**
@@ -418,16 +426,16 @@ public class VendaComputadorView extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JToggleButton jToggleButton3;
-    private javax.swing.JToggleButton jToggleButton4;
     private javax.swing.JLabel lblImagem;
+    private javax.swing.JToggleButton linux;
+    private javax.swing.JRadioButton notebook;
+    private javax.swing.JRadioButton pc;
     private javax.swing.JPanel pnlAcessorios;
     private javax.swing.JPanel pnlAcessorios1;
     private javax.swing.JPanel pnlHD;
     private javax.swing.JPanel pnlSO;
+    private javax.swing.JRadioButton servidor;
+    private javax.swing.JToggleButton windows;
     // End of variables declaration//GEN-END:variables
 }
